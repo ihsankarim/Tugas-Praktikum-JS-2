@@ -1,2 +1,2 @@
 # Tugas-Praktikum-JS-2
-Muhammad Ihsan Kurnia Al-karim_0110221278_TI12
+0110221278 - Muhammad Ihsan Kurnia Al-karim - TI 12
