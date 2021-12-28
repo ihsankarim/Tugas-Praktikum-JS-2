@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="form.js"></script>
+    <style>
+        * {
+            padding: 5px;
+        }
+        input {
+            width: 250px;
+        }
+        fieldset {
+            width: 40%;
+            margin: 10px auto;
+        }
+        .submit {
+            text-align: center;
+        }
+        button {
+            width: 80px;
+        }
+        .submit > input {
+            width: 80px;
+        }
+    </style>
+    <title>Form Validation</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Form Validation</legend>
+    <form onsubmit="input()">
+        <table>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>:</td>
+                <td><input type="text" id="nama" placeholder="Nama Lengkap Anda" maxlength="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" placeholder="example@example.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="jam-berangkat">Jam Keberangkatan</label></td>
+                <td>:</td>
+                <td><input type="time" id="jam-berangkat" placeholder="Waktu" required></td>
+            </tr>
+            <tr>
+                <td><label for="tujuan-keberangkatan">Tujuan Keberangkatan</label></td>
+                <td>:</td>
+                <td><input type="text" id="tujuan-keberangkatan" placeholder="Tujuan Anda" required></td>
+            </tr>
+            <tr>
+                <td><label for="jumlah-tiket">Jumlah Tiket</label></td>
+                <td>:</td>
+                <td><input type="number" id="jumlah-tiket" min="1" max="10" placeholder="Jumlah Tiket Yang Dipesan" required></td>
+            </tr>
+        </table>
+    <div class="submit">
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+    </div>
+    </form>
+
+    <div id="output"></div>
+    </fieldset>
+</body>
+</html>
